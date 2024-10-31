@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #board {
+            display: grid;
+            grid-template-columns: repeat(7, 50px);
+            gap: 5px;
+            margin: 20px auto;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: lightgray;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cell.red {
+            background-color: red;
+        }
+        .cell.yellow {
+            background-color: yellow;
+        }
+        #message {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Connect Four</h1>
+    <div id="board"></div>
+    <div id="message"></div>
+    <button id="reset">Reset Game</button>
+
+    <script src="static/main.js"></script>
+</body>
+</html>
